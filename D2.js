@@ -3,15 +3,21 @@
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const numbers = [10, 20]
-console.log(numbers[1])
+let num1 = 8
+let num2 = 16
+if (num2 > num1) {
+  console.log("maggiore")
+} else {
+  num1 > num2
+  console.log("minore")
+}
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const ex2 = [1, 2, 3, 4]
-if (ex2 != 5 || ex2 === 5) {
+if (ex2 != 5) {
   console.log("not equal")
 }
 /* ESERCIZIO 3
@@ -19,16 +25,26 @@ if (ex2 != 5 || ex2 === 5) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const ex3 = [5, 10, 15, 20, 25]
-if (ex3[4] / 5) {
+const ex3 = 25
+if (ex3 % 5 === 0) {
   console.log("divisibile per 5")
+} else {
+  console.log("non divisibile")
 }
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let numero8 = 8
+let somma = 16
+if (numero8 === 8 || somma === 8) {
+  console.log("uno dei 2 numeri è 8")
+} else if (somma + numero8 === 8) {
+  console.log("la somma è uguale a 8")
+} else if (somma - numero8 === 8) {
+  console.log("la sottrazione è uguale a 8")
+}
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
   C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
@@ -47,7 +63,11 @@ console.log(totalShoppingCart)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let blackFriday = (totalShoppingCart * 20) / 100
+console.log(blackFriday)
+if (totalShoppingCart + blackFriday) {
+  console.log
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -125,7 +145,7 @@ console.log(ex11)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 const ex14 = []
-ex14.splice(0, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+ex14.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 console.log(ex14)
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
