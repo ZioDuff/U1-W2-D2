@@ -16,7 +16,7 @@ if (num2 > num1) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const ex2 = [1, 2, 3, 4]
+let ex2
 if (ex2 != 5) {
   console.log("not equal")
 }
@@ -52,22 +52,27 @@ if (numero8 === 8 || somma === 8) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let cart = 40
-let ship = 10
-const totalShoppingCart = cart >= 50 ? cart : cart + ship
-console.log(totalShoppingCart)
-
+let totalShoppingCart = 40
+let shipping = 10
+let amountToPay = totalShoppingCart
+if (totalShoppingCart < 50) {
+  amountToPay = totalShoppingCart += shipping
+}
+console.log(amountToPay)
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let blackFriday = (totalShoppingCart * 20) / 100
-console.log(blackFriday)
-if (totalShoppingCart + blackFriday) {
-  console.log
+let totalShoppingCart2 = 50
+let shipping2 = 10
+totalShoppingCart2 = (totalShoppingCart2 * 20) / 100
+let amountToPay2 = totalShoppingCart2
+if (totalShoppingCart2 < 50) {
+  amountToPay2 = totalShoppingCart2 += shipping
 }
+console.log(amountToPay2)
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -75,44 +80,40 @@ if (totalShoppingCart + blackFriday) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const ex7 = [3, 6, 9]
-ex7.reverse()
-console.log(ex7)
+
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let ex8 = 12
-console.log(typeof ex8)
+let ex8 = 20
+if (typeof ex8 === "number") {
+  console.log("è un numero")
+} else {
+  console.log("non è un numero")
+}
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
-/* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
+let ex9 = 356
+if (ex9 % 356 === 2) {
+  console.log("è unn numero pari")
+} else {
+  console.log("è un numeor dispari")
+}
+//ESERCIZIO 10
+//Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
 let val = 7
-if (val < 10) {
-  console.log("Meno di 10")
-} else if (val < 5) {
+if (val < 5) {
   console.log("Meno di 5")
+} else if (val < 10) {
+  console.log("Meno di 10")
 } else {
   console.log("Uguale a 10 o maggiore")
-}*/
-
-/* SCRIVI QUI LA TUA RISPOSTA */
-let val = 7
-let m10 = val < 10
-let m5 = val < 5
-if (m5 === true) {
-  console.log("Minore  di 5")
-} else if (m10 === true && val > 5) {
-  console.log("Meno di 10")
-} else {
-  console.log("maggiore o uguale a 10 ")
 }
+
 /* ESERCIZIO 11
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
